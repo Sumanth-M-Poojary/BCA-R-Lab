@@ -1,0 +1,9 @@
+x<-c(2,4,5,6,8,11)
+y<-c(18,12,10,8,7,5)
+m<-lm(y~x)
+print(m)
+plot(x,y)
+abline(reg=m,col="blue",lwd="3")
+n1<-7
+p<-predict(m,newdata=data.frame(x=n1))
+print(p)
